@@ -1,0 +1,44 @@
+---
+
+---
+
+<nav>
+  <a href="/">
+    <img src="./favicon.png" alt="" class="logo">
+  </a>
+  <div>
+    <a class="router" href="/blog">Blog</a>
+    <a class="router" href="/projects">Projects</a>
+  </div>
+</nav>
+
+<style>
+  nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    top: 0;
+    height: 4rem;
+    margin: 0.5rem 0.5rem;
+  }
+
+  a {
+    all: unset;
+    cursor: pointer;
+  }
+  a:hover {
+    background-color: rgb(209, 219, 187);
+  }
+
+  .logo {
+    height: 100%;
+  }
+  a:has(> img) {
+    border-radius: 99rem;
+  }
+
+  .router {
+    font-size: var(--h2);
+    margin-left: 2rem;
+  }
+</style>
