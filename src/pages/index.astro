@@ -5,11 +5,32 @@ const title = 'Home Page'
 ---
 
 <MainLayout title={title}>
-	<h1>Edwin Wright</h1>
-	<h4>Engineer</h4>
-	<h4>Programmer</h4>
+	<main>
+		<section>
+			<h2>Engineer</h2>
+		</section>
+
+		<section>
+			<h2>Programmer</h2>
+		</section>
+	</main>
 </MainLayout>
 
 <style>
+	main {
+		width: 100vw;
+		display: flex;
+		flex-flow: row nowrap;
+		align-items: center;
+		height: calc(100vh - 5rem);
+		overflow: none;
+	}
+
+	section {
+		width: 50vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	
 </style>
