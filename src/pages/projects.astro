@@ -1,9 +1,26 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Card from '../components/card.astro'
 
 const title = 'Projects'
+const projects = await Astro.glob('./project/*.md')
 ---
 
 <MainLayout title={title}>
   <h1>{title}</h1>
+
+  <main>
+    {projects.map((project) => (
+      <Card title={project.frontmatter.title} description={project.frontmatter.description} img={project.frontmatter.img} url={project.url ?? '/'} />
+    ))}
+  </main>
 </MainLayout>
+
+<style>
+  main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 5rem
+  }
+</style>

@@ -1,7 +1,7 @@
 ---
 layout: '../../layouts/Article.astro'
-title: 'Plane'
-description: 'A remote control plane I scratch-built out of foam'
+title: 'Review Site'
+description: 'A review site that my friends and I made for computer science class'
 img: 'https://media.cntraveler.com/photos/581250f2997d59497dccf8bc/16:9/w_2560%2Cc_limit/GettyImages-185298837.jpg'
 ---
 

@@ -6,24 +6,35 @@ const title = 'Home Page'
 
 <MainLayout title={title}>
 	<main>
-		<section>
-			<h2>Engineer</h2>
-		</section>
 
-		<section>
-			<h2>Programmer</h2>
-		</section>
+		<a href="/project/plane">
+			<section class="engineer">
+			<h2>Engineer</h2>
+			</section>
+		</a>
+
+		<a href="/project/review-site-thing">
+			<section class="programmer">
+				<h2>Programmer</h2>
+			</section>
+		</a>		
+
 	</main>
 </MainLayout>
 
 <style>
 	main {
-		width: 100vw;
 		display: flex;
 		flex-flow: row nowrap;
 		align-items: center;
-		height: calc(100vh - 5rem);
-		overflow: none;
+		height: calc(100vh - 5.85rem);
+	}
+
+	a {
+		all: unset;
+		width: 50vw;
+		height: 100%;
+		cursor: pointer;
 	}
 
 	section {
@@ -31,6 +42,22 @@ const title = 'Home Page'
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		height: 100%;
+	}
+	section:hover h2 {
+		transform: scale(1.4);
+	}
+
+	h2 {
+		transition-duration: 0.2s;
 	}
 	
+	.engineer h2 {
+		/* background-image: url('https://media.cntraveler.com/photos/581250f2997d59497dccf8bc/16:9/w_2560%2Cc_limit/GettyImages-185298837.jpg'); */
+		background-color: yellow;
+	}
+
+	.programmer h2 {
+		background-color: green;
+	}
 </style>

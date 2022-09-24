@@ -1,0 +1,28 @@
+---
+import MainLayout from "./MainLayout.astro";
+
+const { frontmatter } = Astro.props
+---
+
+<MainLayout title={frontmatter.title}>
+  <header>
+    <h1>{frontmatter.title}</h1>
+    <h4>{frontmatter.description}</h4>
+  </header>
+
+  <article>
+    <slot/>
+  </article>
+</MainLayout>
+
+<style>
+  header {
+    text-align: center;
+  }
+
+  article {
+    font-family: 'Courier New', Courier, monospace;
+    width: 65vw;
+    margin: 0 auto;
+  }
+</style>
