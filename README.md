@@ -1,5 +1,7 @@
 # Astro Starter Kit: Minimal
 
+https://codewright.tech
+
 ```
 npm create astro@latest -- --template minimal
 ```
